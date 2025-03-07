@@ -1,0 +1,203 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* Color Palette */
+:root {
+    --dark: #3D1308; /* Black bean */
+    --medium: #7B0D1E; /* Burgundy */
+    --accent: #9F2042; /* Amaranth purple */
+    --light: #F8E5EE; /* Lavender blush */
+    --white: #FFFFFF; /* White for GitHub logo */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.sidebar {
+    width: 25%;
+    height: 100vh;
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    left: 0;
+}
+
+.sidebar h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.sidebar .icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.sidebar .icons svg {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar .icons svg:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    width: 75%;
+    margin-left: 25%;
+    overflow-y: auto;
+    background-color: var(--light);
+    padding-top: 70px; /* Ensures scrolling does not overlap navbar */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 75%;
+    left: 25%;
+    background: var(--light);
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--accent);
+}
+
+.section {
+    min-height: auto;
+    padding: 100px 5%;
+    width: 100%;
+    margin-left: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#about {
+    background-color: var(--light);
+}
+
+#education {
+    background-color: var(--accent);
+    color: var(--light);
+}
+
+#projects {
+    background-color: var(--medium);
+    color: var(--light);
+}
+
+#contact {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.section h2 {
+    font-size: 3rem;
+    color: inherit;
+    margin-bottom: 25px;
+}
+
+.section p, .section ul {
+    font-size: 1.3rem;
+    color: inherit;
+    line-height: 1.8;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 16px 32px;
+    background: var(--light);
+    color: var(--dark);
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+    border: 2px solid var(--light);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background: var(--accent);
+    color: var(--light);
+    transform: scale(1.05);
+}
+
+.project {
+    margin-bottom: 60px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project h3 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.project p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--medium);
+    color: var(--light);
+    margin-top: 50px;
+}
