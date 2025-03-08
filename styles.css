@@ -126,6 +126,8 @@ nav {
 #projects {
     background-color: var(--medium);
     color: var(--light);
+    opacity: 1 !important;  /* Ensures it's always visible */
+    transform: none !important; /* Prevents the slide-in effect */
 }
 
 #contact {
