@@ -106,12 +106,6 @@ nav {
     margin-left: 0;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.section.fade-in {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 #about {
