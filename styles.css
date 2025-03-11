@@ -104,8 +104,6 @@ nav {
     padding: 100px 5%;
     width: 100%;
     margin-left: 0;
-    opacity: 0;
-    transform: translateY(20px);
 }
 
 #about {
@@ -120,8 +118,10 @@ nav {
 #projects {
     background-color: var(--medium);
     color: var(--light);
-    opacity: 1 !important;  /* Ensures it's always visible */
-    transform: none !important; /* Prevents the slide-in effect */
+    opacity: 1 !important;  
+    transform: none !important;
+       opacity: 1;
+    transform: translateY(0);
 }
 
 #contact {
