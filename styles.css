@@ -100,7 +100,7 @@ nav {
 }
 
 .section {
-    min-height: auto;
+    min-height: 300px;
     padding: 100px 5%;
     width: 100%;
     margin-left: 0;
@@ -108,11 +108,17 @@ nav {
 
 #about {
     background-color: var(--light);
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 #education {
     background-color: var(--accent);
     color: var(--light);
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 #projects {
@@ -120,7 +126,7 @@ nav {
     color: var(--light);
     opacity: 1 !important;  
     transform: none !important;
-       opacity: 1;
+    opacity: 1;
     transform: translateY(0);
 }
 
