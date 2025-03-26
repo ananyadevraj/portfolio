@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananya's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class = "logo">Ananya Devraj</div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#experience_and_education">Education and Experience</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id = "hamburgernav">
+        <div class = "logo">Ananya Devraj</div>
+        <div class = "hamburgermenu">
+            <div class = "hamburgericon" onclick = "toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "menulinks">
+                <li><a href = "#about"  onclick = "toggleMenu()">About and Education</a></li>
+                <li><a href = "#experience_and_education"  onclick = "toggleMenu()">Experience</a></li>
+                <li><a href = "#projects"  onclick = "toggleMenu()">Projects</a></li>
+                <li><a href = "#contact"  onclick = "toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+     <section id = "profile">
+        <div class = "section_pic-container">
+            <img src = "./assets/profile.png" alt ="Ananya Devraj Profile Picture"/>
+        </div>
+        <div class = "section_text">
+            <p class = "section_text_p1">
+                Hi! I'm
+            </p>
+            <h1 class = "title"> Ananya Devraj</h1>
+            <p class = "section_text_p2">Data Science and Economics Student @ NYU</p>
+            <div class = "btn-container">
+                <button class = "btn btn-color-2" onclick = "window.open('./assets/resume.pdf')"> My Resume</button>
+                <button class = "btn btn-color-1" onclick = "location.href='./#contact'">Contact Info</button>
+
+            </div>
+            <div id = "socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://linkedin.com/in/ananyadevraj/'" />
+                <img src="./assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/ananyadevraj/'" />
+                
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container about-container">
+          <div class="about-text">
+            <p>
+              I'm Ananya! I'm a Data Science and Economics major entering my final year at NYU, with minors in Math & Computer Science. I have professional experience in Product Management and Business Development, and I'm particularly interested in helping people and organizations leverage their data in the most productive way possible. I was born in NYC and grew up in Singapore. My international background has led me to have an incredibly strong passion for travel, people of different cultures, and learning more about every corner of the world.
+            </p>
+          </div>
+        </div>
+      
+        <div class="section-container education-container">
+          <div class="education-left">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+          </div>
+          <div class="education-right">
+            <p>
+              <strong>New York University:</strong> <br  />B.A. Data Science and Economics, Minors in Math & Computer Science.<br /> 3.83 GPA, Presidential Honors & Dean's List <br /> August 2022–Present<br />
+              <br />
+              <strong>UWCSEA Singapore:</strong> <br  /> IB Diploma with a final score of 44/45. <br  /> August 2018 - May 2022
+            </p>
+          </div>
+        </div>
+      </section>
+    <script src = "script.js"> </script>
+</body>
+</html>
