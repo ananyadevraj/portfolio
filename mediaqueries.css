@@ -1,9 +1,22 @@
-@media screen and (max-width:1200px){
-    #desktop-nav{
-        display: none;
+/* Show hamburger nav only on small screens */
+@media screen and (max-width: 768px) {
+    #desktop-nav {
+      display: none;
     }
-
+  
     #hamburgernav {
-        display:flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+      height: 10vh;
     }
-}
+  }
+  
+  /* Show desktop nav only on larger screens */
+  @media screen and (min-width: 769px) {
+    #hamburgernav {
+      display: none;
+    }
+  }
+  
