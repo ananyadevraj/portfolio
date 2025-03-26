@@ -12,10 +12,11 @@
         <div class = "logo">Ananya Devraj</div>
         <div>
             <ul class = "nav-links">
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#experience_and_education">Education and Experience</a></li>
-                <li><a href = "#projects">Projects</a></li>
-                <li><a href = "#contact">Contact</a></li>
+                <li><a href = "#about"  onclick = "toggleMenu()">About and Education</a></li>
+                <li><a href = "#skills_coursework"  onclick = "toggleMenu()">Skills & Coursework</a></li>
+                <li><a href = "#experience"  onclick = "toggleMenu()">Experience</a></li>
+                <li><a href = "#projects"  onclick = "toggleMenu()">Projects</a></li>
+                <li><a href = "#contact"  onclick = "toggleMenu()">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -29,7 +30,8 @@
             </div>
             <div class = "menulinks">
                 <li><a href = "#about"  onclick = "toggleMenu()">About and Education</a></li>
-                <li><a href = "#experience_and_education"  onclick = "toggleMenu()">Skills</a></li>
+                <li><a href = "#skills_coursework"  onclick = "toggleMenu()">Skills & Coursework</a></li>
+                <li><a href = "#experience"  onclick = "toggleMenu()">Experience</a></li>
                 <li><a href = "#projects"  onclick = "toggleMenu()">Projects</a></li>
                 <li><a href = "#contact"  onclick = "toggleMenu()">Contact</a></li>
             </div>
@@ -68,73 +70,77 @@
         </div>
       
         <div class="section-container education-container">
-          <div class="education-left">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
+            <div class="education-left">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+            </div>
+          
+            <div class="education-middle">
+              <p>
+                <strong>New York University:</strong><br />
+                B.A. Data Science and Economics<br />
+                Minors in Math & Computer Science<br />
+                3.83 GPA, Presidential Honors & Dean's List<br />
+                August 2022–Present
+              </p>
+            </div>
+          
+            <div class="education-right">
+              <p>
+                <strong>UWCSEA Singapore:</strong><br />
+                IB Diploma with a final score of 44/45<br />
+                Higher Level: Math, Chem, Econ<br />
+                August 2018 – May 2022
+              </p>
+            </div>
           </div>
-          <div class="education-right">
-            <p>
-              <strong>New York University:</strong> <br  />B.A. Data Science and Economics, Minors in Math & Computer Science.<br /> 3.83 GPA, Presidential Honors & Dean's List <br /> August 2022–Present<br />
-              <br />
-              <strong>UWCSEA Singapore:</strong> <br  /> IB Diploma with a final score of 44/45. <br  /> August 2018 - May 2022
-            </p>
-          </div>
-        </div>
       </section>
-      <section id = "experience">
-        <p class = section_text_p1></p>
-        <h1 class = "title">Skills & Relevant Coursework</h1>
-        <div class = "experience-details-container">
-            <div class = "about-container">
-                <div class = "details-container">
-                    <h2 class = "experience-sub-title">Skills</h2>
-                    <div class = "article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt = "checkmark" class = "icon"/>
-                            <h3>Python</h3>
-                            <p>NumPy, Pandas, ML, Deep Learning, Data Visualization</p>
-                            <img src="./assets/checkmark.png" alt = "checkmark" class = "icon"/>
-                            <h3>SQL, Excel, and PowerPoint</h3>
-                            <p>For data analysis and presentation</p>
-                            <img src="./assets/checkmark.png" alt = "checkmark" class = "icon"/>
-                            <h3>Statistics & Econometrics</h3>
-                            <p>Modelling, regression analysis, hypothesis testing</p>
-                            <img src="./assets/checkmark.png" alt = "checkmark" class = "icon"/>
-                            <h3>Tableau</h3>
-                            <p>Data visualization dashboards</p>
-                            <img src="./assets/checkmark.png" alt = "checkmark" class = "icon"/>
-                            <h3>Java</h3>
-                            <p>Problem solving & OOP</p>
-                        </article>
-                    </div>
+      <section id="skills_coursework">
+        <h1 class="title">Skills & Relevant Coursework</h1>
+        <div class="skills-details-container">
+            <div class="skills-container">
+                <h2 class="experience-sub-title">Skills</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                        <h3>Python</h3>
+                        <p>NumPy, Pandas, ML, Deep Learning, Data Visualization</p>
+                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                        <h3>SQL, Excel, and PowerPoint</h3>
+                        <p>For data analysis and presentation</p>
+                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                        <h3>Statistics & Econometrics</h3>
+                        <p>Modelling, regression analysis, hypothesis testing</p>
+                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                        <h3>Tableau</h3>
+                        <p>Data visualization dashboards</p>
+                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                        <h3>Java</h3>
+                        <p>Problem solving & OOP</p>
+                    </article>
                 </div>
             </div>
-            <div class = "about-container">
-                <div class = "details-container">
-                    <h2 class = "experience-sub-title">Relevant Coursework</h2>
-                    <div class = "article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt = "checkmark" class = "icon"/>
-                            <h3>Python</h3>
-                            <p>NumPy, Pandas, ML, Deep Learning, Data Visualization</p>
-                            <img src="./assets/checkmark.png" alt = "checkmark" class = "icon"/>
-                            <h3>SQL, Excel, and PowerPoint</h3>
-                            <p>For data analysis and presentation</p>
-                            <img src="./assets/checkmark.png" alt = "checkmark" class = "icon"/>
-                            <h3>Statistics & Econometrics</h3>
-                            <p>Modelling, regression analysis, hypothesis testing</p>
-                            <img src="./assets/checkmark.png" alt = "checkmark" class = "icon"/>
-                            <h3>Tableau</h3>
-                            <p>Data visualization dashboards</p>
-                            <img src="./assets/checkmark.png" alt = "checkmark" class = "icon"/>
-                            <h3>Java</h3>
-                            <p>Problem solving & OOP</p>
-                        </article>
-                    </div>
+            <div class="coursework-container">
+                <h2 class="experience-sub-title">Relevant Coursework</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                        <h3>Data Science</h3>
+                        <p>Principles of Data Science I and II, Data Structures</p>
+                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                        <h3>Computer Science</h3>
+                        <p>Introduction to Computer Science (Java), Web Design (HTML, CSS, JavaScript), Introduction to Cybersecurity & Privacy Management</p>
+                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                        <h3>Statistics & Mathematics</h3>
+                        <p>Probability and Statistics, Linear Algebra, Mathematics for Economics I and II (Calculus)</p>
+                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                        <h3>Economics</h3>
+                        <p>Econometrics, Statistics for Economics, Microeconomics & Macroeconomics, Money & Banking, International Economics</p>
+                    </article>
                 </div>
             </div>
         </div>
-      </section>
+    </section>
     <script src = "script.js"> </script>
 </body>
 </html>
