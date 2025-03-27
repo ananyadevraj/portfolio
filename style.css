@@ -194,6 +194,8 @@ section {
 .title {
     font-size: 3rem;
     text-align:center;
+    padding-bottom:0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 #socials-container {
@@ -343,4 +345,52 @@ section {
 #skills_coursework {
     margin-top: 0;
     padding-top: 0; 
+}
+
+#experience {
+    margin: 2rem 10rem;
+    padding: 1rem;
+    background: #fff;
+}
+
+
+.experience-details {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.experience-details:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+.role p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.role span {
+    font-size: 1rem;
+    color: #666;
+}
+
+.role ul {
+    list-style: none;
+    padding: 0;
+}
+
+.role li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.role li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #333;
 }
