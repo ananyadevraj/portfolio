@@ -418,11 +418,10 @@ section {
 }
 
 .project-box {
-    flex: 1 1 30%; /* Keeps three boxes per row */
-    max-width: 31%; /* Ensures no more than three boxes per row considering padding and margins */
-    background: white;
-    padding: 20px; /* Increased padding for better spacing of content */
-    margin: 10px; /* Optional: adds space between the boxes */
+    flex: 0 50%; /* change to 0 0 30% for 3 boxes */
+    max-width: 45%; /* change to 31% for 3 boxes*/
+    padding: 10px; 
+    margin: 10px; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: left;
@@ -433,6 +432,7 @@ section {
 
 .project-box h3 {
     margin-bottom: 0.5rem;
+    text-align:center;
 }
 
 .project-box ul {
@@ -440,17 +440,21 @@ section {
     list-style: inside;
     padding-left: 1rem;
     text-align: left;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;  
+}
+
+.project-box li {
+    margin-bottom: 1rem;  
 }
 
 .github-btn {
-    margin-top: auto; /* Pushes the button to the bottom of the box */
-    background-color: #333; /* Dark grey, similar to GitHub's color scheme */
+    margin-top: auto;
+    background-color: black; 
     color: white;
-    padding: 5px 10px; /* Increase padding for a bigger button */
-    border-radius: 15px; /* Makes the button more rounded */
+    padding: 5px 10px; 
+    border-radius: 15px; 
     font-size: 0.8rem;
-    transition: background-color 300ms ease; /* Smooth transition for hover effect */
+    transition: background-color 300ms ease; 
     font-weight:600;
     transition: all 300ms ease;
     padding: 1rem;
@@ -459,5 +463,53 @@ section {
 }
 
 .github-btn:hover {
-    background-color: #555; /* Lightens the button on hover */
+    background-color: #555; 
+}
+
+.project-box img {
+    margin-bottom:1rem;
+}
+
+/*contact*/
+
+#contact {
+    padding: 20px 10rem;  
+      background-color: #f8f8f8;
+      height:25rem;
+}
+
+#contact h1{
+    margin-bottom:5rem;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contact-item {
+    flex: 1;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:16pt;
+    margin:0.5rem;
+}
+
+.contact-icon {
+    width: 50px;  
+    height: 50px;  
+    margin-bottom: 10px; 
+}
+
+.contact-item a {
+    color: #333;  
+    text-decoration: none;  
+    font-size: 1.25rem; 
+}
+
+.contact-item a:hover {
+    color: #555;  
 }
