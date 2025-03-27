@@ -1,4 +1,4 @@
-/* Show hamburger nav only on small screens */
+/* show hamburger nav only on small screens */
 @media screen and (max-width: 768px) {
     #desktop-nav {
       display: none;
@@ -13,7 +13,7 @@
     }
   }
   
-  /* Show desktop nav only on larger screens */
+  /* show desktop nav only on larger screens */
   @media screen and (min-width: 769px) {
     #hamburgernav {
       display: none;
@@ -42,3 +42,4 @@
       margin-bottom: 10px;
   }
 }
+

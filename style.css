@@ -394,3 +394,22 @@ section {
     left: 0;
     color: #333;
 }
+
+
+section {
+    margin: 0 10rem;
+    padding: 2rem;
+    background: #fff; 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+#experience {
+    margin-bottom: 2rem; 
+}
+#projects {
+    margin-top: 2rem; 
+    clear: both; 
+}
+
