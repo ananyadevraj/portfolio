@@ -21,10 +21,10 @@
   }
   @media (max-width: 768px) {
     #about {
-        padding-bottom: 0.25rem; /* Slightly larger padding on mobile */
+        padding-bottom: 0.25rem; 
     }
     #skills_coursework {
-        padding-top: 0.25rem; /* Slightly larger padding on mobile */
+        padding-top: 0.25rem;
     }
 }
 
