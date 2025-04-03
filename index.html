@@ -291,6 +291,16 @@
                 </div>
             </div>
         </section>        
-    <script src = "script.js"> </script>
+    <script src = "script.js"> 
+      document.addEventListener('DOMContentLoaded', function() {
+        const hamburgerIcon = document.querySelector('.hamburgericon');
+        const menuLinks = document.querySelector('.menulinks');
+        
+        hamburgerIcon.addEventListener('click', function() {
+            hamburgerIcon.classList.toggle('open');
+            menuLinks.classList.toggle('open');
+        });
+    });
+    </script>
 </body>
 </html>
