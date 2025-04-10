@@ -6,58 +6,58 @@
     <title>Ananya's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav id = "desktop-nav">
-        <div class = "logo">Ananya Devraj</div>
+    <nav id="desktop-nav">
+        <div class="logo">Ananya Devraj</div>
         <div>
-            <ul class = "nav-links">
-                <li><a href = "#about"  onclick = "toggleMenu()">About and Education</a></li>
-                <li><a href = "#skills_coursework"  onclick = "toggleMenu()">Skills & Coursework</a></li>
-                <li><a href = "#experience"  onclick = "toggleMenu()">Experience</a></li>
-                <li><a href = "#projects"  onclick = "toggleMenu()">Projects</a></li>
-                <li><a href = "#contact"  onclick = "toggleMenu()">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="#about" onclick="toggleMenu()">About and Education</a></li>
+                <li><a href="#skills_coursework" onclick="toggleMenu()">Skills & Coursework</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <nav id = "hamburgernav">
-        <div class = "logo">Ananya Devraj</div>
-        <div class = "hamburgermenu">
-            <div class = "hamburgericon" onclick = "toggleMenu()">
+    <nav id="hamburgernav">
+        <div class="logo">Ananya Devraj</div>
+        <div class="hamburgermenu">
+            <div class="hamburgericon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class = "menulinks">
-                <li><a href = "#about"  onclick = "toggleMenu()">About and Education</a></li>
-                <li><a href = "#skills_coursework"  onclick = "toggleMenu()">Skills & Coursework</a></li>
-                <li><a href = "#experience"  onclick = "toggleMenu()">Experience</a></li>
-                <li><a href = "#projects"  onclick = "toggleMenu()">Projects</a></li>
-                <li><a href = "#contact"  onclick = "toggleMenu()">Contact</a></li>
+            <div class="menulinks">
+                <li><a href="#about" onclick="toggleMenu()">About and Education</a></li>
+                <li><a href="#skills_coursework" onclick="toggleMenu()">Skills & Coursework</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
-     <section id = "profile">
-        <div class = "section_pic-container">
-            <img src = "./assets/profile.png" alt ="Ananya Devraj Profile Picture"/>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile.png" alt="Ananya Devraj Profile Picture"/>
         </div>
-        <div class = "section_text">
-            <p class = "section_text_p1">
+        <div class="section_text">
+            <p class="section_text_p1">
                 Hi! I'm
             </p>
-            <h1 class = "title"> Ananya Devraj</h1>
-            <p class = "section_text_p2">Data Science and Economics Student @ NYU</p>
-            <div class = "btn-container">
-                <button class = "btn btn-color-2" onclick = "window.open('./assets/resume.pdf')"> My Resume</button>
-                <button class = "btn btn-color-1" onclick = "location.href='./#contact'">Contact Info</button>
-
+            <h1 class="title">Ananya Devraj</h1>
+            <p class="section_text_p2">Data Science and Economics Student @ NYU</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">My Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
                 <a href="https://linkedin.com/in/ananyadevraj/" target="_blank">
-                    <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" />
+                    <i class="fab fa-linkedin social-icon"></i>
                 </a>
                 <a href="https://github.com/ananyadevraj/" target="_blank">
-                    <img src="./assets/github.png" alt="My GitHub Profile" class="icon" />
+                    <i class="fab fa-github social-icon"></i>
                 </a>
             </div>
         </div>
@@ -65,61 +65,71 @@
     <section id="about">
         <h1 class="title">About Me</h1>
         <div class="section-container about-container">
-          <div class="about-text">
-            <p>
-              I'm Ananya! I'm a Data Science and Economics major entering my final year at NYU, with minors in Math & Computer Science. I have professional experience in Product Management and Business Development, and I'm particularly interested in helping people and organizations leverage their data in the most productive way possible. I was born in NYC and grew up in Singapore. My international background has led me to have an incredibly strong passion for travel, people of different cultures, and learning more about every corner of the world.
-            </p>
-          </div>
+            <div class="about-text">
+                <p>
+                    I'm Ananya! I'm a Data Science and Economics major entering my final year at NYU, with minors in Math & Computer Science. I have professional experience in Product Management and Business Development, and I'm particularly interested in helping people and organizations leverage their data in the most productive way possible. I was born in NYC and grew up in Singapore. My international background has led me to have an incredibly strong passion for travel, people of different cultures, and learning more about every corner of the world.
+                </p>
+            </div>
         </div>
-      
+
         <div class="section-container education-container">
             <div class="education-left">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
-              <h3>Education</h3>
+                <i class="fas fa-graduation-cap education-icon"></i>
+                <h3>Education</h3>
             </div>
-          
+
             <div class="education-middle">
-              <p>
-                <strong>New York University:</strong><br />
-                B.A. Data Science and Economics<br />
-                Minors in Math & Computer Science<br />
-                3.83 GPA, Presidential Honors & Dean's List<br />
-                August 2022–Present
-              </p>
+                <p>
+                    <strong>New York University:</strong><br />
+                    B.A. Data Science and Economics<br />
+                    Minors in Math & Computer Science<br />
+                    3.83 GPA, Presidential Honors & Dean's List<br />
+                    August 2022–Present
+                </p>
             </div>
-          
+
             <div class="education-right">
-              <p>
-                <strong>UWCSEA Singapore:</strong><br />
-                IB Diploma with a final score of 44/45<br />
-                Higher Level: Math, Chem, Econ<br />
-                August 2018 – May 2022
-              </p>
+                <p>
+                    <strong>UWCSEA Singapore:</strong><br />
+                    IB Diploma with a final score of 44/45<br />
+                    Higher Level: Math, Chem, Econ<br />
+                    August 2018 – May 2022
+                </p>
             </div>
-          </div>
-      </section>
-      <section id="skills_coursework">
+        </div>
+    </section>
+    <section id="skills_coursework">
         <h1 class="title">Skills & Relevant Coursework</h1>
         <div class="skills-details-container">
             <div class="skills-container">
                 <h2 class="experience-sub-title">Skills</h2>
                 <div class="article-container">
                     <article>
-                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
-                        <h3>Python</h3>
-                        <p>NumPy, Pandas, ML, Deep Learning, Data Visualization</p>
-                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
-                        <h3>SQL, Excel, and PowerPoint</h3>
-                        <p>For data analysis and presentation</p>
-                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
-                        <h3>Statistics & Econometrics</h3>
-                        <p>Modelling, regression analysis, hypothesis testing</p>
-                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
-                        <h3>Tableau</h3>
-                        <p>Data visualization dashboards</p>
-                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
-                        <h3>Java</h3>
-                        <p>Problem solving & OOP</p>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <h3>Python</h3>
+                            <p>NumPy, Pandas, ML, Deep Learning, Data Visualization</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <h3>SQL, Excel, and PowerPoint</h3>
+                            <p>For data analysis and presentation</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Statistics & Econometrics</h3>
+                            <p>Modelling, regression analysis, hypothesis testing</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <h3>Tableau</h3>
+                            <p>Data visualization dashboards</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <h3>Java</h3>
+                            <p>Problem solving & OOP</p>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -127,18 +137,26 @@
                 <h2 class="experience-sub-title">Relevant Coursework</h2>
                 <div class="article-container">
                     <article>
-                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
-                        <h3>Data Science</h3>
-                        <p>Principles of Data Science I and II, Data Structures</p>
-                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
-                        <h3>Computer Science</h3>
-                        <p>Introduction to Computer Science (Java), Web Design (HTML, CSS, JavaScript), Introduction to Cybersecurity & Privacy Management</p>
-                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
-                        <h3>Statistics & Mathematics</h3>
-                        <p>Probability and Statistics, Linear Algebra, Mathematics for Economics I and II (Calculus)</p>
-                        <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
-                        <h3>Economics</h3>
-                        <p>Econometrics, Statistics for Economics, Microeconomics & Macroeconomics, Money & Banking, International Economics</p>
+                        <div class="course-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Data Science</h3>
+                            <p>Principles of Data Science I and II, Data Structures</p>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-code"></i>
+                            <h3>Computer Science</h3>
+                            <p>Introduction to Computer Science (Java), Web Design (HTML, CSS, JavaScript), Introduction to Cybersecurity & Privacy Management</p>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-square-root-alt"></i>
+                            <h3>Statistics & Mathematics</h3>
+                            <p>Probability and Statistics, Linear Algebra, Mathematics for Economics I and II (Calculus)</p>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <h3>Economics</h3>
+                            <p>Econometrics, Statistics for Economics, Microeconomics & Macroeconomics, Money & Banking, International Economics</p>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -147,11 +165,12 @@
     <section id="experience">
         <h1 class="title">Experience</h1>
         <div class="experience-details">
-            <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+            <i class="fas fa-briefcase experience-icon"></i>
             <div class="role">
                 <p><strong>Project Team Data Scientist - Biokind Analytics</strong><br />
-                 <span>02/2025 - Present</span>
-                <br /> <span>New York University, NY</span></p>
+                    <span>02/2025 - Present</span>
+                    <br /> <span>New York University, NY</span>
+                </p>
                 <ul>
                     <li>Providing data-driven solutions using Python to enhance non-profit healthcare analytics.</li>
                     <li>Developing automated data solutions to streamline operations and data consistency.</li>
@@ -160,11 +179,12 @@
             </div>
         </div>
         <div class="experience-details">
-            <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+            <i class="fas fa-briefcase experience-icon"></i>
             <div class="role">
                 <p><strong>Product Management Intern - StoneX Global Payments</strong><br />
-                <span>05/2024 - 08/2024</span>
-            <br /> <span>New York City, NY</span></p>
+                    <span>05/2024 - 08/2024</span>
+                    <br /> <span>New York City, NY</span>
+                </p>
                 <ul>
                     <li>Analyzed and reported on 2.4 million+ payment transactions using Python and Excel.</li>
                     <li>Led development and testing of new FX payment technologies and products.</li>
@@ -174,11 +194,12 @@
             </div>
         </div>
         <div class="experience-details">
-            <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+            <i class="fas fa-briefcase experience-icon"></i>
             <div class="role">
                 <p><strong>Business Planning and Administrative Intern - Adamas Salons</strong><br />
-                <span>09/2023 - 03/2024</span>
-                <br /> <span>Remote</span></p>
+                    <span>09/2023 - 03/2024</span>
+                    <br /> <span>Remote</span>
+                </p>
                 <ul>
                     <li>Assisted in the development of a new business strategy for a mobile app product.</li>
                     <li>Performed market analysis to identify potential investment/partnership opportunities and growth areas.</li>
@@ -187,11 +208,12 @@
             </div>
         </div>
         <div class="experience-details">
-            <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+            <i class="fas fa-briefcase experience-icon"></i>
             <div class="role">
                 <p><strong>Business Development Intern - ASATA</strong><br />
-                <span>12/2022 - 03/2023</span>
-                <br /> <span>Remote</span></p>
+                    <span>12/2022 - 03/2023</span>
+                    <br /> <span>Remote</span>
+                </p>
                 <ul>
                     <li>Researched and pitched SEO services to emerging EdTech companies.</li>
                     <li>Analyzed company performance through website traffic data and the use of SEO keywords.</li>
@@ -199,11 +221,12 @@
             </div>
         </div>
         <div class="experience-details">
-            <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+            <i class="fas fa-briefcase experience-icon"></i>
             <div class="role">
                 <p><strong>Academic Coach and Tutor - LessonPal</strong><br />
-                <span>07/2022 - 02/2023</span>
-                <br /> <span>Remote</span></p>
+                    <span>07/2022 - 02/2023</span>
+                    <br /> <span>Remote</span>
+                </p>
                 <ul>
                     <li>Taught online individual lessons in Economics, Chemistry, and Mathematics.</li>
                     <li>Prepared useful, organized resources and lesson plans for students.</li>
@@ -212,11 +235,12 @@
             </div>
         </div>
         <div class="experience-details">
-            <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+            <i class="fas fa-briefcase experience-icon"></i>
             <div class="role">
                 <p><strong>Dance Leader and Choreographer - UWCSEA Singapore</strong><br />
-                <span>01/2019 - 02/2022</span>
-                <br /> <span>Singapore</span></p>
+                    <span>01/2019 - 02/2022</span>
+                    <br /> <span>Singapore</span>
+                </p>
                 <ul>
                     <li>Choreographed dances for showcases over 3 years, contributing to raising over 5,000 SGD for Voice of World NGO</li>
                     <li>Managed groups of up to 20 dances across 6 weeks for each performance cycle.</li>
@@ -226,81 +250,78 @@
     </section>
     <section id="projects">
         <h1 class="title">Projects</h1>
-            <div class="projects-container">
-                <!-- project 1 -->
-                <div class="project-box">
-                    <img src="./assets/biokind.png" alt="Biokind Icon" class="icon"/>
-                    <h3>Biokind Analytics</h3>
-                    <ul>
-                        <li>Cleaning and merging client lists to create master lists for a healthcare nonprofit using Python.</li>
-                        <li>Analyzing the non-profit's client activity such as enrollment data across programs and client retention.</li>
-                        <li>Providing automated data entry and management solutions for more efficient future data collection practices.</li>
-                    </ul>
-                    <button class="btn github-btn" onclick="window.open('https://www.biokind.org/')">More Info</button>
-                </div>
-                <!-- project 2 -->
-                <div class="project-box">
-                    <img src="./assets/stonex.png" alt="StoneX Icon" class="icon"/>
-                    <h3>StoneX Global Payments</h3>
-                    <ul>
-                        <li>Produced a payments report pulling data collected on PowerBI and analyzing it on Python.</li>
-                        <li>Created a dashboard showcasing top currency flows and quarterly payment trends. </li>
-                        <li>Communicated findings to the product team using data visualization through Tableau.</li>
-                        <li>Automated future data collection and storage to a centralized system.</li>
-                    </ul>
-                    <button class="btn github-btn" onclick="window.open('https://www.stonex.com/en/payments/')">More Info</button>
-                </div>
-                <!-- project 3 -->
-                <div class="project-box">
-                    <img src="./assets/python.png" alt="python Icon" class="icon"/>
-                    <h3>Airline Ratings Analysis</h3>
-                    <ul>
-                        <li>Cleaned and analyzed airline passenger satisfaction data to determine what makes a 'good airline'.</li>
-                        <li>Used probability theory and machine learning to determine which factors are the greatest predictors of passenger satisfaction.</li>
-                        <li>Evaluated the findings in terms of recommendations for airlines to maximize ratings, visualized the data.</li>
-                    </ul>
-                    <button class="btn github-btn" onclick="window.open('https://github.com/ananyadevraj/project-1')">GitHub</button>
-                </div>
-                <!-- project 4 -->
-                <div class="project-box">
-                    <img src="./assets/canva.png" alt="canva Icon" class="icon"/>
-                    <h3>Business Outline: AI Travel Planning Startup</h3>
-                    <ul>
-                        <li>Designed the user interface for a travel planning startup's website. </li>                        <li>Includes a website landing page deck outlining the main features.</li>
-                        <li>Models additional pages with more information, a 'traveler type' quiz for personalized recommendations, and an about section.</li>
-                        <li>Features an animated explanation (created on Canva) of the vision board search function.</li>
-                    </ul>
-                    <button class="btn github-btn" onclick="window.open('https://github.com/ananyadevraj/travel')">GitHub</button>
-                </div>
-             
-        </section>        
-        <section id="contact">
-            <h1 class="title">Contact</h1>
-            <div class="contact-container">
-                <div class="contact-item">
-                    <img src="./assets/email.png" alt="Email Icon" class="contact-icon">
-                    <a href="mailto:ad6112@nyu.edu.com">ananyadevraj@nyu.edu</a>
-                </div>
-                <div class="contact-item">
-                    <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="contact-icon">
-                    <a href="https://linkedin.com/in/ananyadevraj" target="_blank">LinkedIn Profile</a>
-                </div>
-        
-                <div class="contact-item">
-                    <p>New York City,<br> New York, USA</p>
-                </div>
+        <div class="projects-container">
+            <div class="project-box">
+                <img src="./assets/biokind.png" alt="Biokind Icon" class="icon"/>
+                <h3>Biokind Analytics</h3>
+                <ul>
+                    <li>Cleaning and merging client lists to create master lists for a healthcare nonprofit using Python.</li>
+                    <li>Analyzing the non-profit's client activity such as enrollment data across programs and client retention.</li>
+                    <li>Providing automated data entry and management solutions for more efficient future data collection practices.</li>
+                </ul>
+                <button class="btn github-btn" onclick="window.open('https://www.biokind.org/')">More Info</button>
             </div>
-        </section>        
-    <script src = "script.js"> 
-      document.addEventListener('DOMContentLoaded', function() {
-        const hamburgerIcon = document.querySelector('.hamburgericon');
-        const menuLinks = document.querySelector('.menulinks');
-        
-        hamburgerIcon.addEventListener('click', function() {
-            hamburgerIcon.classList.toggle('open');
-            menuLinks.classList.toggle('open');
+            <div class="project-box">
+                <img src="./assets/stonex.png" alt="StoneX Icon" class="icon"/>
+                <h3>StoneX Global Payments</h3>
+                <ul>
+                    <li>Produced a payments report pulling data collected on PowerBI and analyzing it on Python.</li>
+                    <li>Created a dashboard showcasing top currency flows and quarterly payment trends. </li>
+                    <li>Communicated findings to the product team using data visualization through Tableau.</li>
+                    <li>Automated future data collection and storage to a centralized system.</li>
+                </ul>
+                <button class="btn github-btn" onclick="window.open('https://www.stonex.com/en/payments/')">More Info</button>
+            </div>
+            <div class="project-box">
+                <img src="./assets/python.png" alt="python Icon" class="icon"/>
+                <h3>Airline Ratings Analysis</h3>
+                <ul>
+                    <li>Cleaned and analyzed airline passenger satisfaction data to determine what makes a 'good airline'.</li>
+                    <li>Used probability theory and machine learning to determine which factors are the greatest predictors of passenger satisfaction.</li>
+                    <li>Evaluated the findings in terms of recommendations for airlines to maximize ratings, visualized the data.</li>
+                </ul>
+                <button class="btn github-btn" onclick="window.open('https://github.com/ananyadevraj/project-1')">GitHub</button>
+            </div>
+            <div class="project-box">
+                <img src="./assets/canva.png" alt="canva Icon" class="icon"/>
+                <h3>Business Outline: AI Travel Planning Startup</h3>
+                <ul>
+                    <li>Designed the user interface for a travel planning startup's website. </li>
+                    <li>Includes a website landing page deck outlining the main features.</li>
+                    <li>Models additional pages with more information, a 'traveler type' quiz for personalized recommendations, and an about section.</li>
+                    <li>Features an animated explanation (created on Canva) of the vision board search function.</li>
+                </ul>
+                <button class="btn github-btn" onclick="window.open('https://github.com/ananyadevraj/travel')">GitHub</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        <div class="contact-container">
+            <div class="contact-item">
+                <i class="fas fa-envelope contact-icon"></i>
+                <a href="mailto:ad6112@nyu.edu">ananyadevraj@nyu.edu</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin-in contact-icon"></i>
+                <a href="https://linkedin.com/in/ananyadevraj" target="_blank">LinkedIn Profile</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt contact-icon"></i>
+                <p>New York City,<br> New York, USA</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js">
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerIcon = document.querySelector('.hamburgericon');
+            const menuLinks = document.querySelector('.menulinks');
+            
+            hamburgerIcon.addEventListener('click', function() {
+                hamburgerIcon.classList.toggle('open');
+                menuLinks.classList.toggle('open');
+            });
         });
-    });
     </script>
 </body>
 </html>
