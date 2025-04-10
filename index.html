@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ananya's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -148,7 +148,7 @@
                             <p>Introduction to Computer Science (Java), Web Design (HTML, CSS, JavaScript), Introduction to Cybersecurity & Privacy Management</p>
                         </div>
                         <div class="course-item">
-                            <i class="fas fa-square-root-alt"></i>
+                            <i class="fas fa-square-root-variable"></i>
                             <h3>Statistics & Mathematics</h3>
                             <p>Probability and Statistics, Linear Algebra, Mathematics for Economics I and II (Calculus)</p>
                         </div>
@@ -312,7 +312,8 @@
             </div>
         </div>
     </section>
-    <script src="script.js">
+    <script src="script.js"></script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const hamburgerIcon = document.querySelector('.hamburgericon');
             const menuLinks = document.querySelector('.menulinks');
@@ -322,6 +323,13 @@
                 menuLinks.classList.toggle('open');
             });
         });
+
+        function toggleMenu() {
+            const menuLinks = document.querySelector('.menulinks');
+            const hamburgerIcon = document.querySelector('.hamburgericon');
+            menuLinks.classList.toggle('open');
+            hamburgerIcon.classList.toggle('open');
+        }
     </script>
 </body>
 </html>
