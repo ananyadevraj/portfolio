@@ -227,8 +227,10 @@ nav {
     border: 6px solid white;
     box-shadow: var(--shadow-xl);
     background: var(--bg-tertiary);
+    opacity: 0;
 }
 .section_pic-container img.loaded {
+    opacity: 1;
     animation: fadeInImage 0.3s ease-in;
 }
 
