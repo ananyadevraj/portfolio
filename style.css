@@ -664,7 +664,7 @@ section {
 .experience-title-group .company {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--text-secondary);
+    color: var(--pink-light);
     margin-bottom: 0.5rem;
 }
 
@@ -694,7 +694,7 @@ section {
     content: '→';
     position: absolute;
     left: 0;
-    color: var(--text-light);
+    color: var(--pink-light);
     font-weight: bold;
 }
 
@@ -825,7 +825,9 @@ section {
     width: 100%;
     justify-content: center;
 }
-
+.project-btn i{
+   color: black;
+}
 /* Contact Section */
 #contact {
     background: white;
