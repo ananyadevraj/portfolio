@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ananya's Portfolio</title>
+    <title>Ananya Devraj - Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
     <nav id="desktop-nav">
-        <div class="logo">Ananya Devraj</div>
+        <div class="logo">
+            <img src="./assets/ananya-logo.png" alt="Ananya" class="logo-image"/>
+        </div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about" onclick="toggleMenu()">About and Education</a></li>
-                <li><a href="#skills_coursework" onclick="toggleMenu()">Skills & Coursework</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills_coursework">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+    
     <nav id="hamburgernav">
-        <div class="logo">Ananya Devraj</div>
+        <div class="logo">
+            <img src="./assets/ananya-logo.png" alt="Ananya" class="logo-image"/>
+        </div>
         <div class="hamburgermenu">
             <div class="hamburgericon" onclick="toggleMenu()">
                 <span></span>
@@ -30,321 +36,484 @@
                 <span></span>
             </div>
             <div class="menulinks">
-                <li><a href="#about" onclick="toggleMenu()">About and Education</a></li>
-                <li><a href="#skills_coursework" onclick="toggleMenu()">Skills & Coursework</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills_coursework" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
+
     <section id="profile">
-        <div class="section_pic-container">
-            <img src="./assets/profile.png" alt="Ananya Devraj Profile Picture"/>
+        <div class="profile-content">
+            <div class="section_pic-container">
+                <img src="./assets/profile.png" alt="Ananya Devraj Profile Picture"/>
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Hi! I'm</p>
+                <h1 class="title">
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </h1>
+                <p class="section_text_p2">Data Science & Economics @ NYU</p>
+                <p class="section_text_p3">Turning data into insights, ideas into impact</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="window.open('./assets/resume.pdf')">
+                        <i class="fas fa-file-download"></i> Resume
+                    </button>
+                    <button class="btn btn-color-2" onclick="location.href='./#contact'">
+                        <i class="fas fa-envelope"></i> Get in Touch
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <a href="https://linkedin.com/in/ananyadevraj/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin social-icon"></i>
+                    </a>
+                    <a href="https://github.com/ananyadevraj/" target="_blank" class="social-link">
+                        <i class="fab fa-github social-icon"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="section_text">
-            <p class="section_text_p1">
-                <br />
-                <br />
-                Hi! I'm
-            </p>
-            <h1 class="title">Ananya Devraj</h1>
-            <p class="section_text_p2">Data Science and Economics Student @ NYU</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">My Resume</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <a href="https://linkedin.com/in/ananyadevraj/" target="_blank">
-                    <i class="fab fa-linkedin social-icon"></i>
-                </a>
-                <a href="https://github.com/ananyadevraj/" target="_blank">
-                    <i class="fab fa-github social-icon"></i>
-                </a>
-            </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
+
     <section id="about">
-        <h1 class="title">About Me</h1>
-        <div class="section-container about-container">
+        <div class="section-header">
+            <span class="section-tag">Introduction</span>
+            <h1 class="title">About Me</h1>
+        </div>
+        <div class="about-container">
             <div class="about-text">
                 <p>
-                    I'm Ananya! I'm a Data Science and Economics major entering my final year at NYU, with minors in Math & Computer Science. I have professional experience in Product Management and Business Development, and I'm particularly interested in helping people and organizations leverage their data in the most productive way possible. I was born in NYC and grew up in Singapore. My international background has led me to have an incredibly strong passion for travel, people of different cultures, and learning more about every corner of the world.
+                    I'm a Data Science and Economics major entering my final year at NYU, with minors in Math & Computer Science. I have professional experience in Product Management and Business Development, and I'm particularly interested in helping people and organizations leverage their data in the most productive way possible.
+                </p>
+                <p>
+                    Born in NYC and raised in Singapore, my international background has fueled a deep passion for travel, cultural diversity, and exploring every corner of the world.
                 </p>
             </div>
         </div>
 
-        <div class="section-container education-container">
-            <div class="education-left">
-                <i class="fas fa-graduation-cap education-icon"></i>
-                <h3>Education</h3>
+        <div class="education-container">
+            <div class="education-card">
+                <div class="education-icon-wrapper">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>New York University</h3>
+                <p class="degree">B.A. Data Science & Economics</p>
+                <p class="details">Minors in Math & Computer Science</p>
+                <p class="details">GPA: 3.83 | Presidential Honors & Dean's List</p>
+                <p class="date">August 2022 – May 2026</p>
             </div>
 
-            <div class="education-middle">
-                <p>
-                    <strong>New York University:</strong><br />
-                    B.A. Data Science and Economics<br />
-                    Minors in Math & Computer Science<br />
-                    3.83 GPA, Presidential Honors & Dean's List<br />
-                    August 2022–Present
-                </p>
-            </div>
-
-            <div class="education-right">
-                <p>
-                    <strong>UWCSEA Singapore:</strong><br />
-                    IB Diploma with a final score of 44/45<br />
-                    Higher Level: Math, Chem, Econ<br />
-                    August 2018 – May 2022
-                </p>
+            <div class="education-card">
+                <div class="education-icon-wrapper">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>UWCSEA Singapore</h3>
+                <p class="degree">IB Diploma</p>
+                <p class="details">Score: 44/45</p>
+                <p class="details">HL: Math, Chemistry, Economics</p>
+                <p class="date">August 2018 – May 2022</p>
             </div>
         </div>
     </section>
+
     <section id="skills_coursework">
-        <h1 class="title">Skills & Relevant Coursework</h1>
-        <div class="skills-details-container">
-            <div class="skills-container">
-                <h2 class="experience-sub-title">Skills</h2>
-                <div class="article-container">
-                    <article>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <h3>Python</h3>
-                            <p>NumPy, Pandas, ML, Deep Learning, Data Visualization</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <h3>SQL, Excel, and PowerPoint</h3>
-                            <p>For data analysis and presentation</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-line"></i>
-                            <h3>Statistics & Econometrics</h3>
-                            <p>Modelling, regression analysis, hypothesis testing</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-bar"></i>
-                            <h3>Tableau</h3>
-                            <p>Data visualization dashboards</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-java"></i>
-                            <h3>Java</h3>
-                            <p>Problem solving & OOP</p>
-                        </div>
-                    </article>
+        <div class="section-header">
+            <span class="section-tag">Expertise</span>
+            <h1 class="title">Skills & Coursework</h1>
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-python"></i>
                 </div>
+                <h3>Python</h3>
+                <p>NumPy, Pandas, ML, Deep Learning, Data Visualization</p>
             </div>
-            <div class="coursework-container">
-                <h2 class="experience-sub-title">Relevant Coursework</h2>
-                <div class="article-container">
-                    <article>
-                        <div class="course-item">
-                            <i class="fas fa-laptop-code"></i>
-                            <h3>Data Science</h3>
-                            <p>Principles of Data Science I and II, Data Structures</p>
-                        </div>
-                        <div class="course-item">
-                            <i class="fas fa-code"></i>
-                            <h3>Computer Science</h3>
-                            <p>Introduction to Computer Science (Java), Web Design (HTML, CSS, JavaScript), Introduction to Cybersecurity & Privacy Management</p>
-                        </div>
-                        <div class="course-item">
-                            <i class="fas fa-square-root-variable"></i>
-                            <h3>Statistics & Mathematics</h3>
-                            <p>Probability and Statistics, Linear Algebra, Mathematics for Economics I and II (Calculus)</p>
-                        </div>
-                        <div class="course-item">
-                            <i class="fas fa-chart-pie"></i>
-                            <h3>Economics</h3>
-                            <p>Econometrics, Statistics for Economics, Microeconomics & Macroeconomics, Money & Banking, International Economics</p>
-                        </div>
-                    </article>
+
+            <div class="skill-card" >
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
                 </div>
+                <h3>SQL & Databases</h3>
+                <p>Data querying, analysis, and management</p>
+            </div>
+
+            <div class="skill-card" >
+                <div class="skill-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Statistics & Econometrics</h3>
+                <p>Modeling, regression analysis, hypothesis testing</p>
+            </div>
+
+            <div class="skill-card" >
+                <div class="skill-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Tableau</h3>
+                <p>Data visualization dashboards</p>
+            </div>
+
+            <div class="skill-card" >
+                <div class="skill-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h3>Java</h3>
+                <p>Problem solving & OOP</p>
+            </div>
+
+            <div class="skill-card" >
+                <div class="skill-icon">
+                    <i class="fas fa-table"></i>
+                </div>
+                <h3>Excel & PowerPoint</h3>
+                <p>Business analytics and presentations</p>
+            </div>
+        </div>
+
+        <div class="coursework-section">
+            <h2 class="coursework-title">Relevant Coursework</h2>
+            <div class="coursework-tags">
+                <span class="course-tag">Principles of Data Science I & II</span>
+                <span class="course-tag">Data Structures</span>
+                <span class="course-tag">Statistics & Econometrics</span>
+                <span class="course-tag">Linear Algebra</span>
+                <span class="course-tag">Microeconomics</span>
+                <span class="course-tag">Macroeconomics</span>
+                <span class="course-tag">Computer Science Fundamentals</span>
+                <span class="course-tag">Machine Learning</span>
             </div>
         </div>
     </section>
+
     <section id="experience">
-        <h1 class="title">Experience</h1>
-          <div class="experience-details">
-            <i class="fas fa-briefcase experience-icon"></i>
-            <div class="role">
-                <p><strong>Product Management Intern - StoneX Global Payments</strong><br />
-                    <span>05/2024 - 08/2024 and 05/2025 - 08/2025</span>
-                    <br /> <span>New York City, NY</span>
-                </p>
-                <ul>
-                    <li>Analyzed and reported on 2.4 million+ payment transactions using Python and Excel.</li>
-                    <li>Led development and testing of new FX payment technologies and products.</li>
-                    <li>Produced business requirement documents (BRDs) for new product initiatives</li>
-                    <li>Created a master deck of StoneX Payments' client-specific product offerings on PowerPoint. </li>
+        <div class="section-header">
+            <span class="section-tag">Professional Journey</span>
+            <h1 class="title">Experience</h1>
+        </div>
+
+        <div class="timeline">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                        <h3>Vice President</h3>
+                        <p class="company">NYU Biokind Analytics</p>
+                        <p class="location-date">
+                            <i class="fas fa-map-marker-alt"></i> New York, NY  •  
+                            <i class="fas fa-calendar"></i> January 2025 - Present
+                        </p>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>Lead and manage two project teams delivering custom data solutions, including NLP survey analysis and donation/fundraising performance modeling</li>
+                    <li>Drive partnership development by building outreach pipelines and leading marketing initiatives to onboard new healthcare and environmental nonprofits</li>
+                    <li>Designed a strategic one-pager and outreach framework that increased nonprofit response rate and social media engagement, supporting organizational growth</li>
                 </ul>
             </div>
-        </div>
-        <div class="experience-details">
-            <i class="fas fa-briefcase experience-icon"></i>
-            <div class="role">
-                <p><strong>Vice President - Biokind Analytics</strong><br />
-                    <span>02/2025 - Present</span>
-                    <br /> <span>New York University, NY</span>
-                </p>
-                <ul>
-                    <li>Providing automated, data-driven solutions using Python to enhance non-profit healthcare analytics.</li>
-                    <li>Organized future data-entry and management processes to allow for more effiency and improved data collection for the client.</li>
-                    <li>Delivered a user-friendly Streamlit application to the client that can run analytics, and produce downloadable visuals & master lists based on their data.</li>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                        <h3>Product Management Intern</h3>
+                        <p class="company">StoneX Payments</p>
+                        <p class="location-date">
+                            <i class="fas fa-map-marker-alt"></i> New York, NY  •  
+                            <i class="fas fa-calendar"></i> May - Aug 2024 & 2025
+                        </p>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>Executed UAT and quality assurance for new FX payment products, validating functionality and improving delivery for institutional clients</li>
+                    <li>Supported agile product development by contributing to BRDs, user stories, cross-functional project timelines, and cost–benefit analyses</li>
+                    <li>Partnered with Operations and Engineering to map payment workflows, document system dependencies, and identify areas for process improvement</li>
                 </ul>
             </div>
-        </div>
-        <div class="experience-details">
-            <i class="fas fa-briefcase experience-icon"></i>
-            <div class="role">
-                <p><strong>Business Planning and Administrative Intern - Adamas Salons</strong><br />
-                    <span>09/2023 - 03/2024</span>
-                    <br /> <span>Remote</span>
-                </p>
-                <ul>
-                    <li>Assisted in the development of a new business strategy for a mobile app product.</li>
-                    <li>Performed market analysis to identify potential investment/partnership opportunities and growth areas.</li>
-                    <li>Prepared decks for potential investors and a crowdfunding campaign</li>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                        <h3>Business Strategy & Operations Intern</h3>
+                        <p class="company">Adamas Salons</p>
+                        <p class="location-date">
+                            <i class="fas fa-map-marker-alt"></i> Remote  •  
+                            <i class="fas fa-calendar"></i> Sept 2023 - March 2024
+                        </p>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>Supported strategic planning for an early-stage BeautyTech startup, contributing to investor outreach and capital-raising efforts</li>
+                    <li>Conducted competitive and market analysis to inform product roadmap, website optimization, and app development priorities</li>
+                    <li>Evaluated customer segmentation and value propositions to strengthen positioning and identify key differentiators across the BeautyTech landscape</li>
                 </ul>
             </div>
-        </div>
-        <div class="experience-details">
-            <i class="fas fa-briefcase experience-icon"></i>
-            <div class="role">
-                <p><strong>Business Development Intern - ASATA</strong><br />
-                    <span>12/2022 - 03/2023</span>
-                    <br /> <span>Remote</span>
-                </p>
-                <ul>
-                    <li>Researched and pitched SEO services to emerging EdTech companies.</li>
-                    <li>Analyzed company performance through website traffic data and the use of SEO keywords.</li>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                        <h3>Business Development & Market Research Intern</h3>
+                        <p class="company">ASATA</p>
+                        <p class="location-date">
+                            <i class="fas fa-map-marker-alt"></i> Remote  •  
+                            <i class="fas fa-calendar"></i> Dec 2022 - March 2023
+                        </p>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>Analyzed trends in the EdTech and SaaS ecosystem to identify partnership and go-to-market opportunities across 250+ startups</li>
+                    <li>Leveraged SEO, web-traffic analytics, and user-behavior data to generate insights for improving digital acquisition and marketing ROI</li>
+                    <li>Conducted pipeline research and built outreach strategies to support business development and revenue growth initiatives</li>
                 </ul>
             </div>
-        </div>
-        <div class="experience-details">
-            <i class="fas fa-briefcase experience-icon"></i>
-            <div class="role">
-                <p><strong>Academic Coach and Tutor - LessonPal</strong><br />
-                    <span>07/2022 - 02/2023</span>
-                    <br /> <span>Remote</span>
-                </p>
-                <ul>
-                    <li>Taught online individual lessons in Economics, Chemistry, and Mathematics.</li>
-                    <li> <a href = "https://ananyasnotes.notion.site/dac488cbfb0144b6a37ce72c1f108817?v=66609fb7fe054059a4d435a022057919" target="_blank">Click here to view my <em>comprehensive notes and resources site</em> for the 20 IB Diploma students I tutored.</a> </li>
-                    <li>Prepared useful, organized resources and lesson plans for students.</li>
-                    <li>Ensured a productive user interface for lessons, adapting to each students' learning style.</li>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                        <h3>Academic Coach & Tutor</h3>
+                        <p class="company">LessonPal</p>
+                        <p class="location-date">
+                            <i class="fas fa-map-marker-alt"></i> Remote  •  
+                            <i class="fas fa-calendar"></i> July 2022 - Feb 2023
+                        </p>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>Taught online individual lessons in Economics, Chemistry, and Mathematics</li>
+                    <li>Created <a href="https://ananyasnotes.notion.site/dac488cbfb0144b6a37ce72c1f108817?v=66609fb7fe054059a4d435a022057919" target="_blank">comprehensive notes and resources site</a> for 20 IB Diploma students</li>
+                    <li>Adapted teaching methods to each student's unique learning style</li>
                 </ul>
             </div>
-        </div>
-        <div class="experience-details">
-            <i class="fas fa-briefcase experience-icon"></i>
-            <div class="role">
-                <p><strong>Dance Leader and Choreographer - UWCSEA Singapore</strong><br />
-                    <span>01/2019 - 02/2022</span>
-                    <br /> <span>Singapore</span>
-                </p>
-                <ul>
-                    <li>Choreographed dances for showcases over 3 years, contributing to raising over 5,000 SGD for Voice of World NGO</li>
-                    <li>Managed groups of up to 20 dances across 6 weeks for each performance cycle.</li>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                        <h3>Dance Leader & Choreographer</h3>
+                        <p class="company">UWCSEA Singapore</p>
+                        <p class="location-date">
+                            <i class="fas fa-map-marker-alt"></i> Singapore  •  
+                            <i class="fas fa-calendar"></i> Jan 2019 - Feb 2022
+                        </p>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>Choreographed dances for showcases, raising over 5,000 SGD for Voice of World NGO</li>
+                    <li>Managed groups of up to 20 dancers across 6-week performance cycles</li>
                 </ul>
             </div>
         </div>
     </section>
+
     <section id="projects">
-        <h1 class="title">Projects</h1>
-        <div class="projects-container">
-            <div class="project-box">
-                <img src="./assets/biokind.png" alt="Biokind Icon" class="icon"/>
-                <h3>Biokind Analytics</h3>
-                <ul>
-                    <li>Automated master client list generation for a healthcare nonprofit using Python.</li>
-                    <li>Created an app using Streamlit with a simple UI, allowing users to generate master client lists by uploading sheets without hassle and setup.</li>
-                    <li>Provided efficient data analysis and client activity management solutions by integrating data visualizations into the Streamlit app.</li>
-                </ul>
-                <button class="btn github-btn" onclick="window.open('https://github.com/ananyadevraj/script_example')">GitHub</button>
+        <div class="section-header">
+            <span class="section-tag">Featured Work</span>
+            <h1 class="title">Projects</h1>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-wrapper">
+                        <img src="./assets/biokind.png" alt="Biokind" class="project-logo"/>
+                        <h3>Biokind Analytics</h3>
+                    </div>
+                    <p class="project-description">Automated data management solution for healthcare nonprofit, saving 2+ hours daily through Python automation and Streamlit interface.</p>
+                    <ul class="project-highlights">
+                        <li>Merges 25+ client lists in under 3 seconds</li>
+                        <li>User-friendly Streamlit app interface</li>
+                        <li>Integrated data visualizations for trend analysis</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">Data Analysis</span>
+                    </div>
+                    <button class="btn project-btn" onclick="window.open('https://github.com/ananyadevraj/script_example')">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </button>
+                </div>
             </div>
-            <div class="project-box">
-                <img src="./assets/java.png" alt="Java Icon" class="icon"/>
-                <h3>Card Game with GUI: Java</h3>
-                
-                <ul>
-                  <li>Built a visual War card game in Java Swing using custom singly linked list data structure for deck management</li>
-                  <li>Implemented generic MyList class with insertion, deletion, and traversal operations for efficient card handling</li>
-                  <li>Created interactive GUI with real-time gameplay, score tracking, and external card image integration</li>
-                  <li>Demonstrated Java graphics, event handling, and object-oriented programming principles</li>
-                </ul>
-                <button class="btn github-btn" onclick="window.open('https://github.com/ananyadevraj/java_project')">GitHub</button>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-wrapper">
+                        <img src="./assets/java.png" alt="Java" class="project-logo"/>
+                        <h3>War Card Game - Java GUI</h3>
+                    </div>
+                    <p class="project-description">Interactive card game built with Java Swing featuring custom data structures and real-time gameplay.</p>
+                    <ul class="project-highlights">
+                        <li>Custom singly linked list for deck management</li>
+                        <li>Interactive GUI with event handling</li>
+                        <li>Real-time score tracking system</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Swing</span>
+                        <span class="tag">OOP</span>
+                    </div>
+                    <button class="btn project-btn" onclick="window.open('https://github.com/ananyadevraj/java_project')">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </button>
+                </div>
             </div>
-            <div class="project-box">
-                <img src="./assets/stonex.png" alt="StoneX Icon" class="icon"/>
-                <h3>StoneX Global Payments</h3>
-                <ul>
-                    <li>Produced a payments report pulling data collected on PowerBI and analyzing it on Python.</li>
-                    <li>Created a dashboard showcasing top currency flows and quarterly payment trends. </li>
-                    <li>Communicated findings to the product team using data visualization through Tableau.</li>
-                    <li>Automated future data collection and storage to a centralized system.</li>
-                </ul>
-                <button class="btn github-btn" onclick="window.open('https://www.stonex.com/en/payments/')">More Info</button>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-wrapper">
+                        <img src="./assets/stonex.png" alt="StoneX" class="project-logo"/>
+                        <h3>StoneX Payments Dashboard</h3>
+                    </div>
+                    <p class="project-description">Comprehensive payments analytics dashboard analyzing 2.4M+ transactions with interactive visualizations.</p>
+                    <ul class="project-highlights">
+                        <li>Tableau dashboard with top currency flows</li>
+                        <li>Bloomberg BQuant widget integration</li>
+                        <li>Quarterly FX payment trend analysis</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Bloomberg</span>
+                    </div>
+                    <button class="btn project-btn" onclick="window.open('https://www.stonex.com/en/payments/')">
+                        <i class="fas fa-external-link-alt"></i> Learn More
+                    </button>
+                </div>
             </div>
-            <div class="project-box">
-                <img src="./assets/python.png" alt="python Icon" class="icon"/>
-                <h3>Airline Ratings Analysis</h3>
-                <ul>
-                    <li>Cleaned and analyzed airline passenger satisfaction data to determine what makes a 'good airline'.</li>
-                    <li>Used probability theory and machine learning to determine which factors are the greatest predictors of passenger satisfaction.</li>
-                    <li>Evaluated the findings in terms of recommendations for airlines to maximize ratings, visualized the data.</li>
-                </ul>
-                <button class="btn github-btn" onclick="window.open('https://github.com/ananyadevraj/project-1')">GitHub</button>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-wrapper">
+                        <img src="./assets/python.png" alt="Python" class="project-logo"/>
+                        <h3>Airline Ratings Analysis</h3>
+                    </div>
+                    <p class="project-description">Machine learning analysis of passenger satisfaction data to identify key predictors of airline quality.</p>
+                    <ul class="project-highlights">
+                        <li>Probability theory & ML models</li>
+                        <li>Data cleaning and visualization</li>
+                        <li>Actionable recommendations for airlines</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">ML</span>
+                        <span class="tag">Statistics</span>
+                    </div>
+                    <button class="btn project-btn" onclick="window.open('https://github.com/ananyadevraj/project-1')">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </button>
+                </div>
             </div>
-            <div class="project-box">
-                <img src="./assets/canva.png" alt="canva Icon" class="icon"/>
-                <h3>Business Outline: AI Travel Planning Startup</h3>
-                <ul>
-                    <li>Designed the user interface for a travel planning startup's website. </li>
-                    <li>Includes a website landing page deck outlining the main features.</li>
-                    <li>Models additional pages with more information, a 'traveler type' quiz for personalized recommendations, and an about section.</li>
-                    <li>Features an animated explanation (created on Canva) of the vision board search function.</li>
-                </ul>
-                <button class="btn github-btn" onclick="window.open('https://github.com/ananyadevraj/travel')">GitHub</button>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-title-wrapper">
+                        <img src="./assets/canva.png" alt="Canva" class="project-logo"/>
+                        <h3>AI Travel Planning Startup</h3>
+                    </div>
+                    <p class="project-description">Complete UI/UX design for an AI-powered travel planning platform with personalized recommendations.</p>
+                    <ul class="project-highlights">
+                        <li>Landing page and feature decks</li>
+                        <li>Personalized "traveler type" quiz</li>
+                        <li>Animated vision board search function</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">Canva</span>
+                        <span class="tag">Product Design</span>
+                    </div>
+                    <button class="btn project-btn" onclick="window.open('https://github.com/ananyadevraj/travel')">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </button>
+                </div>
             </div>
         </div>
     </section>
+
     <section id="contact">
-        <h1 class="title">Contact</h1>
-        <div class="contact-container">
-            <div class="contact-item">
-                <i class="fas fa-envelope contact-icon"></i>
-                <a href="mailto:ad6112@nyu.edu">ananyadevraj@nyu.edu</a>
-            </div>
-            <div class="contact-item">
-                <i class="fab fa-linkedin-in contact-icon"></i>
-                <a href="https://linkedin.com/in/ananyadevraj" target="_blank">LinkedIn Profile</a>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt contact-icon"></i>
-                <p>New York City,<br> New York, USA</p>
+        <div class="section-header">
+            <span class="section-tag">Let's Connect</span>
+            <h1 class="title">Contact</h1>
+        </div>        
+        <div class="contact-grid">
+            <a href="mailto:ananyadevraj@nyu.edu" class="contact-card">
+                <div class="contact-icon-wrapper" style="background: white;">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p>ananyadevraj@nyu.edu</p>
+            </a>
+
+            <a href="https://linkedin.com/in/ananyadevraj" target="_blank" class="contact-card">
+                <div class="contact-icon-wrapper" style="background: white;">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/ananyadevraj</p>
+            </a>
+
+            <div class="contact-card">
+                <div class="contact-icon-wrapper" style="background: white;">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Location</h3>
+                <p>New York City, NY</p>
             </div>
         </div>
     </section>
+
+    <footer>
+        <p> Ananya Devraj • 2025</p>
+    </footer>
+
     <script src="script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburgerIcon = document.querySelector('.hamburgericon');
-            const menuLinks = document.querySelector('.menulinks');
-            
-            hamburgerIcon.addEventListener('click', function() {
-                hamburgerIcon.classList.toggle('open');
-                menuLinks.classList.toggle('open');
-            });
+        // Typewriter effect
+        const text = "Ananya";
+        const typewriter = document.getElementById('typewriter');
+        let i = 0;
+
+        function typeWriter() {
+            if (i < text.length) {
+                typewriter.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+
+        // Start typewriter when page loads
+        window.addEventListener('load', () => {
+            setTimeout(typeWriter, 500);
         });
 
+        // Hamburger menu toggle
         function toggleMenu() {
-            const menuLinks = document.querySelector('.menulinks');
-            const hamburgerIcon = document.querySelector('.hamburgericon');
-            menuLinks.classList.toggle('open');
-            hamburgerIcon.classList.toggle('open');
+            const menu = document.querySelector(".menulinks");
+            const icon = document.querySelector(".hamburgericon");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
         }
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-card, .project-card, .experience-card, .education-card, .contact-card').forEach(el => {
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>
