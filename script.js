@@ -96,18 +96,35 @@ function typeWriter() {
     if (i < text.length) {
         typewriter.innerHTML += text.charAt(i);
         i++;
-        // Vary typing speed slightly for more natural effect
-        const speed = Math.random() * 100 + 50;
-        setTimeout(typeWriter, speed);
+        // Faster, more consistent typing speed
+        setTimeout(typeWriter, 80);
     } else {
         // After typing is complete, make cursor blink
         document.querySelector('.cursor').style.animation = 'blink 1s step-end infinite';
     }
 }
 
-// Start typewriter animation after page load
-window.addEventListener('load', () => {
-    setTimeout(typeWriter, 800);
+// Start typewriter animation immediately when DOM is ready (don't wait for images)
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(typeWriter, 200);
+    });
+} else {
+    setTimeout(typeWriter, 200);
+}
+
+// Handle profile image loading
+document.addEventListener('DOMContentLoaded', () => {
+    const profileImg = document.querySelector('.section_pic-container img');
+    if (profileImg) {
+        if (profileImg.complete) {
+            profileImg.classList.add('loaded');
+        } else {
+            profileImg.addEventListener('load', () => {
+                profileImg.classList.add('loaded');
+            });
+        }
+    }
 });
 
 // Parallax effect for stickers
