@@ -35,7 +35,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+.featured-project-link {
+    display: inline-block;
+    color: var(--pink-light);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 0.7rem;
+    transition: var(--transition);
+}
 
+.featured-project-link:hover {
+    color: var(--pink);
+}
 html {
     scroll-behavior: smooth;
 }
@@ -495,20 +507,20 @@ section {
 }
 
 .education-card .degree {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
 }
 
 .education-card .details {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     color: var(--text-light);
     margin-bottom: 0.25rem;
 }
 
 .education-card .date {
-    font-size: 0.875rem;
+    font-size: 0.95rem;
     color: var(--text-light);
     margin-top: 1rem;
     font-style: italic;
@@ -568,6 +580,7 @@ section {
 .skill-card p {
     color: var(--text-light);
     line-height: 1.6;
+    font-size:1.1rem;
 }
 
 .coursework-section {
@@ -662,14 +675,14 @@ section {
 }
 
 .experience-title-group .company {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--pink-light);
     margin-bottom: 0.5rem;
 }
 
 .location-date {
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     color: var(--text-light);
 }
 
@@ -781,6 +794,7 @@ section {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    font-size:1.2rem;
 }
 
 .project-highlights {
@@ -794,7 +808,7 @@ section {
     margin-bottom: 0.5rem;
     position: relative;
     color: var(--text-light);
-    font-size: 0.95rem;
+    font-size: 1.1rem;
 }
 
 .project-highlights li::before {
